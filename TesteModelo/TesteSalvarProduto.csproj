@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6656DA27-9463-49CC-8CE4-3E9C1D9670B3}</ProjectGuid>
+    <ProjectGuid>{8627683B-3133-4968-8712-DA8F563E0F14}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TesteLojaVirtual</RootNamespace>
-    <AssemblyName>TesteLojaVirtual</AssemblyName>
+    <RootNamespace>TesteModelo</RootNamespace>
+    <AssemblyName>TesteModelo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,15 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
@@ -63,22 +58,23 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestProdutoMapper.cs" />
+    <Compile Include="TesteModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesteSalvarProduto.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LojaVirtualCleiton\LojaVirtualCleiton.csproj">
-      <Project>{9022eade-971e-4a40-8e1a-c4bc62ee950b}</Project>
-      <Name>LojaVirtualCleiton</Name>
-    </ProjectReference>
+    <Content Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{20dbe4b8-45ce-4fd1-a9c8-7ce6574eeb76}</Project>
       <Name>Modelo</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

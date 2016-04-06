@@ -1,4 +1,6 @@
-﻿using LojaVirtualCleiton.Models;
+﻿using AutoMapper;
+using LojaVirtualCleiton.Models;
+using Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,25 +16,29 @@ namespace LojaVirtualCleiton.Controllers
         public ActionResult Lista()
 
         {
-            var lista = new List<ProdutoViewModel>
+            var produtos = new Produtos();
+            var listaProdutos = produtos.Lista();
+            var lista = Mapper.Map<IList<ProdutoViewModel>>(listaProdutos);
+            return View(lista);     
+            
+            
+        }
+        public ActionResult Editar()
+        {
+            return View();
+        }
+        [System.Web.Mvc.HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Editar(ProdutoViewModel viewModel)
+        {
+            if (ModelState.IsValid)
             {
-                new ProdutoViewModel
-                {
-                    Nome = "Chuteira Nike:",
-                    Categoria = "Calcados"
-                },
-                 new ProdutoViewModel
-                {
-                    Nome = "Camisa Pena:",
-                    Categoria = "Roupas"
-                },
-                new ProdutoViewModel
-                {
-                    Nome = "Camisa Bransk:",
-                    Categoria = "Roupas"
-                }
-            };
-            return View(lista);
+                var produtos = new Produtos();
+                var produto = Mapper.Map<Produto>(viewModel);
+                produtos.Salvar(produto);
+                return RedirectToAction("Lista");
+            }
+            return View(viewModel);
         }
     }
 }

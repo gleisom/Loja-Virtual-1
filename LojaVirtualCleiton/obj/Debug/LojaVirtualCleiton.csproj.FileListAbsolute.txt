@@ -172,3 +172,8 @@ C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleit
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Modelo.dll
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Modelo.pdb
 C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\AutoMapper.xml
+C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Iesi.Collections.dll
+C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\NHibernate.dll
+C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\Iesi.Collections.xml
+C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\NHibernate.xml
+C:\Users\MRH\Documents\Visual Studio 2015\Projects\Loja-Virtual\LojaVirtualCleiton\bin\hibernate.cfg.xml

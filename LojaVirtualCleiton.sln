@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLojaVirtual", "TesteLojaVirtual\TesteLojaVirtual.csproj", "{6656DA27-9463-49CC-8CE4-3E9C1D9670B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteSalvarProduto", "TesteModelo\TesteSalvarProduto.csproj", "{8627683B-3133-4968-8712-DA8F563E0F14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6656DA27-9463-49CC-8CE4-3E9C1D9670B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6656DA27-9463-49CC-8CE4-3E9C1D9670B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6656DA27-9463-49CC-8CE4-3E9C1D9670B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8627683B-3133-4968-8712-DA8F563E0F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8627683B-3133-4968-8712-DA8F563E0F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8627683B-3133-4968-8712-DA8F563E0F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8627683B-3133-4968-8712-DA8F563E0F14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

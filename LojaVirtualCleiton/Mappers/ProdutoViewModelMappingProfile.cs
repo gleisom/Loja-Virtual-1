@@ -14,6 +14,8 @@ namespace LojaVirtualCleiton.Mappers
         {
             Mapper.CreateMap<Produto, ProdutoViewModel>()
             .ForMember (dest=> dest.Categoria, opt => opt.MapFrom(src => src.Categoria.Nome));
+            Mapper.CreateMap<ProdutoViewModel, Produto>()
+                .ForMember(dest => dest.Categoria, opt =>opt.Ignore());
         }
     }
 }
